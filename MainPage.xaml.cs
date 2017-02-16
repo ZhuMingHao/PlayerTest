@@ -32,7 +32,7 @@ namespace PlayerTest
             Windows.UI.ViewManagement.InputPane.GetForCurrentView().TryHide();
             TextBox TB = (TextBox)sender;
             FlyoutBase.ShowAttachedFlyout(TB);
-            Windows.UI.ViewManagement.InputPane.GetForCurrentView().TryShow();
+            // Windows.UI.ViewManagement.InputPane.GetForCurrentView().TryShow();
         }
 
         private void datePicker_Closed(object sender, object e)
