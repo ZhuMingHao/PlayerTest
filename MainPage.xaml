@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="PlayerTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:PlayerTest"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <TextBox
+            x:Name="txtDtpEnd0"
+            Width="130"
+            Height="30"
+            Margin="22,0,0,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top"
+            BorderBrush="Gray"
+            BorderThickness="0.5"
+            FontFamily="Segoe UI"
+            FontSize="15"
+            Foreground="Black"
+            GotFocus="DeclarativeInlineButton_GotFocus">
+            <FlyoutBase.AttachedFlyout>
+                <DatePickerFlyout
+                    x:Name="DtpEnd0"
+                    Title="Select a date"
+                    Closed="datePicker_Closed"
+                    DatePicked="datePicker0_DatePicked" />
+            </FlyoutBase.AttachedFlyout>
+        </TextBox>
+    </Grid>
+</Page>
